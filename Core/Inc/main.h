@@ -27,7 +27,11 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
+<<<<<<< HEAD
 #include "stm32l0xx_hal.h"
+=======
+#include "stm32f0xx_hal.h"
+>>>>>>> 63ea5bca8f7a8eee393567cd996e9d27f876452c
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -57,6 +61,7 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+<<<<<<< HEAD
 #define B1_Pin GPIO_PIN_13
 #define B1_GPIO_Port GPIOC
 #define MCO_Pin GPIO_PIN_0
@@ -71,6 +76,8 @@ void Error_Handler(void);
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14
 #define TCK_GPIO_Port GPIOA
+=======
+>>>>>>> 63ea5bca8f7a8eee393567cd996e9d27f876452c
 
 /* USER CODE BEGIN Private defines */
 

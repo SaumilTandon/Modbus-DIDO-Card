@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>allinone-nucleo-l010rb</name>
+=======
+	<name>stm32MCU_fo30k6t6</name>
+>>>>>>> 63ea5bca8f7a8eee393567cd996e9d27f876452c
 	<comment></comment>
 	<projects>
 	</projects>

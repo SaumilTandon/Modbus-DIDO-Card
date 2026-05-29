@@ -5,6 +5,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 S_SRCS += \
+<<<<<<< HEAD
 ../Core/Startup/startup_stm32l010rbtx.s 
 
 OBJS += \
@@ -12,16 +13,33 @@ OBJS += \
 
 S_DEPS += \
 ./Core/Startup/startup_stm32l010rbtx.d 
+=======
+../Core/Startup/startup_stm32f030k6tx.s 
+
+OBJS += \
+./Core/Startup/startup_stm32f030k6tx.o 
+
+S_DEPS += \
+./Core/Startup/startup_stm32f030k6tx.d 
+>>>>>>> 63ea5bca8f7a8eee393567cd996e9d27f876452c
 
 
 # Each subdirectory must supply rules for building sources it contributes
 Core/Startup/%.o: ../Core/Startup/%.s Core/Startup/subdir.mk
+<<<<<<< HEAD
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@" "$<"
+=======
+	arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@" "$<"
+>>>>>>> 63ea5bca8f7a8eee393567cd996e9d27f876452c
 
 clean: clean-Core-2f-Startup
 
 clean-Core-2f-Startup:
+<<<<<<< HEAD
 	-$(RM) ./Core/Startup/startup_stm32l010rbtx.d ./Core/Startup/startup_stm32l010rbtx.o
+=======
+	-$(RM) ./Core/Startup/startup_stm32f030k6tx.d ./Core/Startup/startup_stm32f030k6tx.o
+>>>>>>> 63ea5bca8f7a8eee393567cd996e9d27f876452c
 
 .PHONY: clean-Core-2f-Startup
 
